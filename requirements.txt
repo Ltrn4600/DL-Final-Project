@@ -1,0 +1,9 @@
+# Add the exact project dependencies and pin versions after confirming
+# the model, dataset, and execution environment.
+numpy
+pandas
+matplotlib
+scikit-learn
+jupyter
+torch
+torchvision
