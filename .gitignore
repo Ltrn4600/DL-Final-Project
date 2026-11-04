@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Experiment outputs and model artifacts
+*.log
+runs/
+wandb/
+mlruns/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Data files (keep datasets out of Git unless intentionally required)
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.zip
