@@ -8,12 +8,12 @@ venv/
 env/
 ENV/
 
-# Jupyter
+# Jupyter / tooling
 .ipynb_checkpoints/
-
-# IDE / OS
 .vscode/
 .idea/
+
+# OS
 .DS_Store
 Thumbs.db
 
@@ -22,19 +22,26 @@ Thumbs.db
 .env.*
 !.env.example
 
-# Experiment outputs and model artifacts
+# Logs and experiment tracking
 *.log
 runs/
 wandb/
 mlruns/
+
+# Dataset files: keep directory placeholders, not raw data in Git
+dataset/train/*
+!dataset/train/.gitkeep
+dataset/test/*
+!dataset/test/.gitkeep
+*.parquet
+*.zip
+
+# Model checkpoints (use Git LFS or external storage if versioning is required)
 *.pt
 *.pth
 *.ckpt
 *.onnx
 
-# Data files (keep datasets out of Git unless intentionally required)
-data/raw/
-data/processed/
+# Experiment CSV is intentionally tracked
 *.csv
-*.parquet
-*.zip
+!experiments/experiment_results.csv
