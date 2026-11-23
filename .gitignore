@@ -45,3 +45,6 @@ dataset/test/*
 # Experiment CSV is intentionally tracked
 *.csv
 !experiments/experiment_results.csv
+
+# Lock files used when appending experiment results
+.*.csv.lock
